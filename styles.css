@@ -1,0 +1,122 @@
+﻿
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+html{
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.15;
+    font-family: DodoRegular, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    padding: 1em 1em 0 1em;
+    width: 17em;
+}
+
+.WorkForEverybodyText{
+    width: 54%;
+    margin-top: 1em;
+}
+
+.WorkForEverybodyText img{
+    width: 95%;
+    height: auto;
+    border-style: none;
+}
+
+p{
+    margin: 0 0 0.8em 0;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+.highlighted{
+    background-color: rgba(255, 235, 0, 0.2);
+}
+
+.dashedLink{
+    color: black;
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.3);
+    align-items: baseline;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    text-decoration: none;
+}
+
+.dashedLink:hover{
+    color: #ff6900;
+    text-decoration: none;
+    border-bottom: 2px dashed #ff6900;
+}
+
+.superwide{
+    width: calc(100% - 2em);
+    margin: 0 auto;
+    padding: 1em 0 1em 1em;
+    max-width: 1600px;
+}
+
+.screen{
+    background-size: cover;
+    display: block;
+}
+.histories{
+    flex-wrap: wrap;
+    position: relative;
+    width: 43%;
+    margin-top: -2em;
+    margin-left: -0.5em;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.jobs-intro{
+    position: relative;
+    background: black;
+    color: white;
+    width: calc(100% - 2em);
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.2em;
+    padding: 1em 1em 1em 1.1em;
+}
+
+.jobs-intro-table{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+.job{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-right: 2%;
+}
+
+.bar-charts{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.chart-body{
+    background-color: rgba(255, 105, 0, 0.2) ;
+    border-top: 3px solid #ff6900; 
+}
+
+.job-title{
+    color: #ff6900;
+}
+
+.jobs-intro-table{
+    justify-content: space-around;
+}
