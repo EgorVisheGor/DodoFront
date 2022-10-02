@@ -1,0 +1,17 @@
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\bin\Debug\net6.0\HTTPServer.exe
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\bin\Debug\net6.0\HTTPServer.deps.json
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\bin\Debug\net6.0\HTTPServer.runtimeconfig.json
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\bin\Debug\net6.0\HTTPServer.dll
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\bin\Debug\net6.0\HTTPServer.pdb
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\obj\Debug\net6.0\HTTPServer.csproj.AssemblyReference.cache
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\obj\Debug\net6.0\HTTPServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\obj\Debug\net6.0\HTTPServer.AssemblyInfoInputs.cache
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\obj\Debug\net6.0\HTTPServer.AssemblyInfo.cs
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\obj\Debug\net6.0\HTTPServer.csproj.CoreCompileInputs.cache
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\obj\Debug\net6.0\HTTPServer.dll
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\obj\Debug\net6.0\refint\HTTPServer.dll
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\obj\Debug\net6.0\HTTPServer.pdb
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\obj\Debug\net6.0\HTTPServer.genruntimeconfig.cache
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\obj\Debug\net6.0\ref\HTTPServer.dll
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\bin\Debug\net6.0\public\index.html
+C:\Users\korol\RiderProjects\HomeworkFront\HTTPServer\bin\Debug\net6.0\public\styles.css
