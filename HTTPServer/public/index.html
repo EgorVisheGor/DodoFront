@@ -1,0 +1,761 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://rabotavdodo.ru/favicon.ico" id="logo">
+    <title>DodoHomework</title>
+    <style>
+        @font-face {
+            font-family: 'DodoBold';
+            src: url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoBold/DodoBold.eot");
+            src: url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoBold/DodoBold.eot?#iefix") format("embedded-opentype"), url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoBold/DodoBold.woff") format("woff"), url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoBold/DodoBold.ttf") format("truetype"), url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoBold/DodoBold.svg#DodoBold") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'DodoMedium';
+            src: url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoMedium/DodoMedium.eot");
+            src: url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoMedium/DodoMedium.eot?#iefix") format("embedded-opentype"), url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoMedium/DodoMedium.woff") format("woff"), url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoMedium/DodoMedium.ttf") format("truetype"), url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoMedium/DodoMedium.svg#DodoMedium") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'DodoRegular';
+            src: url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoRegular/DodoRegular.eot");
+            src: url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoRegular/DodoRegular.eot?#iefix") format("embedded-opentype"), url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoRegular/DodoRegular.woff") format("woff"), url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoRegular/DodoRegular.ttf") format("truetype"), url("https://dodopizza-a.akamaihd.net/rabotavdodo/fonts/DodoRegular/DodoRegular.svg#DodoRegular") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+<!-- Screen div is used for full page design -->
+<div class="screen">
+    <!-- first-screen is used for first peace -->
+    <div class="first-screen">
+        <!-- logo -->
+        <div class="logo">
+            <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/logo-dodopizza.svg" alt="Dodo logo"/>
+        </div>
+        <!-- is used for peace with img and stories -->
+        <div class="superwide">
+            <!-- Image text and link-button -->
+            <div class="WorkForEverybodyText">
+                <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/title-work.svg" alt="Работа на равных"
+                     loading="lazy"/>
+                <p class="big">
+                    Люди работают в&nbsp;удовольствие, когда чувствуют себя значимыми. Проблема в&nbsp;том, что под
+                    значимостью часто понимают должность, и&nbsp;это неправильно. В&nbsp;Додо
+                    <span class="highlighted">
+                        каждый человек в&nbsp;коллективе значимый,
+                     </span>
+                    вне зависимости от&nbsp;того, кем работает.
+                    <a class="dashedLink" href="#respectforeverybody">Это и&nbsp;есть работа на&nbsp;равных.</a>
+                <div class="pseudo-button-div">
+                    <a class="pseudo-button" href="#form">Заполнить анкету</a>
+                </div>
+                </p>
+            </div>
+            <!-- Stories -->
+            <div class="stories">
+                <div class="story" id="dima-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-dima-savelev-optimized.jpg"
+                         alt="Димино фото">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/a-dima-savelev-optimized.jpg"
+                             alt="Димин аватар">
+                        <span>Дима</span>
+                    </div>
+                </div>
+                <div class="story" id="lena-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-lena-shapetko-optimized.jpg"
+                         alt="Фото Лены">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/a-lena-shapetko-optimized.jpg"
+                             alt="Аватар Лены">
+                        <span>Лена</span>
+                    </div>
+                </div>
+                <p class="stories-paragraph">
+                    и ещё 19 честных <span class="false-button"> 
+                    <u></u>
+                    видео
+                </span>
+                    историй
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Second peace with jobs introduction -->
+    <div class="jobs-intro">
+        <div class="jobs-intro-text">
+            <p>Ищем пиццамейкеров, кассиров, курьеров и&nbsp;менеджеров&nbsp;смены</p>
+        </div>
+        <!-- Container for images with description-->
+        <div class="jobs-intro-table">
+            <div class="job">
+                <img class="job-image , job-image1"
+                     src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/role-pizzamaker-optimized.jpg"
+                     alt="Пиццамейкер">
+                <p class="job-title">Пиццамейкер</p>
+                <p class="job-paragraph">Готовит пиццу и&nbsp;не&nbsp;пиццу, делает заготовки ингредиентов, поддерживает
+                    порядок в&nbsp;пиццерии</p>
+            </div>
+            <div class="job">
+                <img class="job-image" src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/role-cashier-optimized.jpg"
+                     alt="Кассир">
+                <p class="job-title">Кассир</p>
+                <p class="job-paragraph">Общается с&nbsp;гостями, помогает выбрать пиццу, следит за&nbsp;порядком в&nbsp;пиццерии
+                    в&nbsp;свою
+                    смену</p>
+            </div>
+            <div class="job">
+                <img class="job-image" src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/role-courier-optimized.jpg"
+                     alt="Курьер">
+                <p class="job-title">Курьер</p>
+                <p class="job-paragraph">Забирает заказы на&nbsp;кухне и&nbsp;доставляет их&nbsp;гостям, принимает
+                    оплату. Следит за&nbsp;порядком
+                    вокруг пиццерии на&nbsp;территории</p>
+            </div>
+            <div class="job">
+                <img class="job-image" src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/role-manager-optimized.jpg"
+                     alt="Менеджер смены">
+                <p class="job-title">Менеджер смены</p>
+                <p class="job-paragraph">Организует работу, чтобы гости вовремя получали свои заказы, а&nbsp;сотрудники
+                    всё успевали</p>
+            </div>
+        </div>
+    </div>
+    <!-- Top bar  -->
+    <div class="navigation-menu visible">
+        <div class="textLogo">
+            <img class="bar-logo" src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/logo-sign.svg"
+                 alt="Логотип додо">
+            <p>Ищем пиццамейкеров, кассиров, курьеров и&nbsp;менеджеров&nbsp;смены</p>
+        </div>
+        <div class="pseudoButton">
+            <a class="pseudo-button" href="#form">Заполнить анкету</a>
+        </div>
+    </div>
+    <!-- Third section with bar charts -->
+    <div id="respectforeverybody" class="chart-table, section">
+        <p class="chart-first-paragraph, big">
+            Додо&nbsp;— это мировая сеть пиццерий родом из&nbsp;Сыктывкара. Мы&nbsp;хотим, чтобы во&nbsp;всём мире люди
+            ели вкусную горячую пиццу с&nbsp;толстым слоем ароматной начинки, и&nbsp;у&nbsp;нас это получается. Вот как
+            росла сеть с&nbsp;момента основания:
+        </p>
+        <div class="chart-section">
+            <div class="bar-charts">
+                <div class="bar-chart">
+                    <div class="chart-number">1</div>
+                    <div class="chart-body" style="height: 0.025em"></div>
+                    <div class="chart-year">2011</div>
+                </div>
+                <div class="bar-chart">
+                    <div class="chart-number">8</div>
+                    <div class="chart-body" style="height: 0.2em"></div>
+                    <div class="chart-year">2012</div>
+                </div>
+                <div class="bar-chart">
+                    <div class="chart-number">12</div>
+                    <div class="chart-body" style="height: 0.3em"></div>
+                    <div class="chart-year">2013</div>
+                </div>
+                <div class="bar-chart">
+                    <div class="chart-number">28</div>
+                    <div class="chart-body" style="height: 0.7em"></div>
+                    <div class="chart-year">2014</div>
+                </div>
+                <div class="bar-chart">
+                    <div class="chart-number">74</div>
+                    <div class="chart-body" style="height: 1.85em"></div>
+                    <div class="chart-year">2015</div>
+                </div>
+                <div class="bar-chart">
+                    <div class="chart-number">154</div>
+                    <div class="chart-body" style="height: 3.85em"></div>
+                    <div class="chart-year">2016</div>
+                </div>
+                <div class="bar-chart">
+                    <div class="chart-number">281</div>
+                    <div class="chart-body" style="height: 7.025em"></div>
+                    <div class="chart-year">2017</div>
+                </div>
+                <div class="bar-chart">
+                    <div class="chart-number">440</div>
+                    <div class="chart-body" style="height: 11em"></div>
+                    <div class="chart-year">2018</div>
+                </div>
+                <div class="bar-chart">
+                    <div class="chart-number">576</div>
+                    <div class="chart-body" style="height: 14.4em"></div>
+                    <div class="chart-year">2019</div>
+                </div>
+                <div class="bar-chart">
+                    <div class="chart-number">675</div>
+                    <div class="chart-body" style="height: 16.875em"></div>
+                    <div class="chart-year">2020</div>
+                </div>
+                <div class="bar-chart">
+                    <div class="chart-number">766</div>
+                    <div class="chart-body" style="height: 19.15em"></div>
+                    <div class="chart-year">2021</div>
+                </div>
+                <div class="bar-chart">
+                    <div class="chart-number">833</div>
+                    <div class="chart-body" style="height: 20.775em"></div>
+                    <div class="chart-year">2022</div>
+                </div>
+            </div>
+            <div class="chart-description">
+                Мы&nbsp;открыли более <span class="chart-description-number">800</span>&nbsp;пиццерий в&nbsp;<span
+                    class="chart-description-number">16</span>&nbsp;странах и&nbsp;продолжаем<br>открывать&nbsp;новые
+            </div>
+        </div>
+        <p class="chart-second-paragraph">
+            Чтобы расти дальше, нам нужны люди, которые каждый день будут работать с удовольствием. Поэтому работа на
+            равных — наш главный принцип. У нас он проявляется через
+            <span class="highlighted">уважение</span> ,
+            <span class="highlighted">стандарты</span>
+            и возможность <span class="highlighted">быть собой</span>.
+        </p>
+    </div>
+    <div class="section">
+        <!-- Respect for everybody page -->
+        <h2>Уважение для каждого</h2>
+        <div class="Respect-fot-everybody">
+            <p class="big">
+                Для нас уважение&nbsp;— это не&nbsp;привилегия, а&nbsp;привычный способ общаться. У&nbsp;нас не&nbsp;
+                принято отчитывать подчиненных, жаловаться друг на&nbsp;друга и&nbsp;кричать. Кассир, менеджер или
+                управляющий&nbsp;— это только набор обязанностей, а&nbsp;не&nbsp;показатель того, с&nbsp;каким уважением
+                с&nbsp;этим человеком нужно общаться, потому что уважение&nbsp;— это норма работы.
+            </p>
+            <div class="stories-table">
+
+                <div class="story small-story" id="text1-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-text-respect-1-optimized.jpg"
+                         alt="История с огоньком">
+                </div>
+
+                <div class="story small-story" id="dima-beard-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-dima-german.jpg" alt="Димино фото">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/a-dima-german.jpg" alt="Димин аватар">
+                        <span>Дима</span>
+                    </div>
+                </div>
+
+                <div class="story small-story" id="text2-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-text-respect-2-optimized.jpg"
+                         alt="История с текстом на голубом фоне">
+                </div>
+
+                <div class="story small-story" id="dima-respect-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-dima-savelev-optimized.jpg"
+                         alt="Димино фото">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/a-dima-savelev-optimized.jpg"
+                             alt="Димин аватар">
+                        <span>Дима</span>
+                    </div>
+                </div>
+
+                <div class="story small-story" id="marat-story">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-marat-islamov.jpg" alt="маратино фото">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/a-marat-islamov.jpg" alt="Димин аватар">
+                        <span>Марат</span>
+                    </div>
+                </div>
+
+            </div>
+            <p>
+                В&nbsp;Додо важно только как человек справляется с&nbsp;обязанностями, исправляет ошибки и&nbsp;учится
+                работать лучше. Поэтому каждый день ребята из&nbsp;Додо идут на&nbsp;работу и&nbsp;знают, что их&nbsp;там
+                ценят.
+            </p>
+            <p>
+                Чтобы принцип равенства соблюдался для всех, мы&nbsp;строго следуем стандартам.
+            </p>
+        </div>
+    </div>
+    <!-- Standarts for everybody -->
+    <div class="section">
+        <h2>Стандраты для всех</h2>
+        <div class="standarts-for-everybody">
+            <p class="big">
+                В&nbsp;Додо помешаны на&nbsp;стандартах, перед стандартами все равны. Они есть у&nbsp;кассира,
+                пиццамейкера, менеджера,
+                управляющего и&nbsp;каждого руководителя. Стандарты не&nbsp;зависят от&nbsp;пола и&nbsp;возраста, и&nbsp;
+                кассиры-парни моют пол в&nbsp;пиццерии наравне с&nbsp;кассирами-девушками.
+            </p>
+            <p>
+                Под каждую ситуацию у&nbsp;нас есть инструкция: как раскладывать посуду, разговаривать с&nbsp;гостями,
+                предлагать новинки. Поэтому даже новички отлично себя чувствуют в&nbsp;Додо. Достаточно пройти обучение
+                и&nbsp;выучить правила, чтобы работать на&nbsp;равных с&nbsp;опытными ребятами.
+            </p>
+            <div class="stories-table">
+
+                <div class="story small-story" id="text2.1-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-text-standart-1-optimized.jpg"
+                         alt="Сделал хорошую работу похвалят">
+                </div>
+
+                <div class="story small-story" id="adelina-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-adelina-gizitdinova.jpg"
+                         alt="Фото Аделины">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/a-adelina-gizitdinova.jpg"
+                             alt="Аватар Аделины">
+                        <span>Аделина</span>
+                    </div>
+                </div>
+
+                <div class="story small-story" id="dima-beard2-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-dima-german.jpg" alt="Димино фото">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/a-dima-german.jpg" alt="Димин аватар">
+                        <span>Дима</span>
+                    </div>
+                </div>
+
+                <div class="story small-story" id="hurshida-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-hurshida-kamilova-optimized.jpg"
+                         alt="Фото Хуршиды">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/a-hurshida-kamilova-optimized.jpg"
+                             alt="Аватар Хуршиды">
+                        <span>Хуршида</span>
+                    </div>
+                </div>
+
+                <div class="story small-story" id="andrei-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-andrey-yamshikov.jpg" alt="Фото Андрея">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/a-andrey-yamshikov.jpg"
+                             alt="ДАватар Андрея">
+                        <span>Андрей</span>
+                    </div>
+                </div>
+
+                <div class="story small-story" id="xusha-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-kseniya-solonnikova-optimized.jpg"
+                         alt="Фото Ксюши">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/a-kseniya-solonnikova-optimized.jpg"
+                             alt="Аватар Ксюши">
+                        <span>Ксюша</span>
+                    </div>
+                </div>
+
+                <div class="story small-story" id="text2.2-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-text-standart-2-optimized.jpg"
+                         alt="В коллективе меня хорошо приняли">
+                </div>
+            </div>
+            <p>
+                Это всё делает работу комфортной: каждый сотрудник точно знает, что в&nbsp;какой ситуации делать,
+                а&nbsp;если не&nbsp;знает, что&nbsp;делать, то&nbsp;знает, к&nbsp;кому обратиться.
+            </p>
+            <p>
+                И&nbsp;хотя у&nbsp;нас всё строго стандартизировано, мы&nbsp;делаем всё, чтобы сотрудники могли
+                оставаться собой.
+            </p>
+        </div>
+    </div>
+    <!-- Posibility to be yourself -->
+    <div class="section">
+        <h2>Возможность быть собой</h2>
+        <div class="Posibilities to be yourself">
+            <p class="big">
+                Нам неинтересны люди-роботы&nbsp;— мы&nbsp;хотим, чтобы каждый сотрудник оставался собой и&nbsp;привносил
+                себя в наше общее дело. Мы&nbsp;примем вас с&nbsp;татуировками и&nbsp;без, с любым цветом волос, любой
+                национальности,
+                политических взглядов и&nbsp;музыкальных предпочтений.
+            </p>
+            <div class="stories-table">
+
+                <div class="story small-story" id="adelina2-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-adelina-gizitdinova.jpg"
+                         alt="Фото Аделины">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/a-adelina-gizitdinova.jpg"
+                             alt="Аватар Аделины">
+                        <span>Аделина</span>
+                    </div>
+                </div>
+
+                <div class="story small-story" id="lena2-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-lena-shapetko-optimized.jpg"
+                         alt="Фото Лены">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/a-lena-shapetko-optimized.jpg"
+                             alt="Аватар Лены">
+                        <span>Лена</span>
+                    </div>
+                </div>
+
+                <div class="story small-story" id="andrei2-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-andrey-yamshikov.jpg" alt="Фото Андрея">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/a-andrey-yamshikov.jpg"
+                             alt="ДАватар Андрея">
+                        <span>Андрей</span>
+                    </div>
+                </div>
+
+                <div class="story small-story" id="hurshida2-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-hurshida-kamilova-optimized.jpg"
+                         alt="Фото Хуршиды">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/a-hurshida-kamilova-optimized.jpg"
+                             alt="Аватар Хуршиды">
+                        <span>Хуршида</span>
+                    </div>
+                </div>
+
+                <div class="story small-story" id="Ульяна-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-ulyana-surova.jpg" alt="Фото Ульяны">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/a-ulyana-surova.jpg" alt="Аватар Ульяны">
+                        <span>Ульяна</span>
+                    </div>
+                </div>
+
+                <div class="story small-story" id="text3.1-image">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-text-yourself-1-optimized.jpg"
+                         alt="Фото Ульяны">
+                </div>
+
+                <div class="story small-story" id="marat2-story">
+                    <div class="story-overlay"></div>
+                    <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/v2/b-marat-islamov.jpg" alt="маратино фото">
+                    <div class="avatar">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/a-marat-islamov.jpg" alt="Димин аватар">
+                        <span>Марат</span>
+                    </div>
+                </div>
+            </div>
+            <p>
+                У&nbsp;каждого сотрудника есть пространство для решений. Например, у&nbsp;нас есть принцип уважения к&nbsp;
+                гостю, но&nbsp;это не&nbsp;значит, что каждый кассир должен общаться формальными и&nbsp;чопорными
+                скриптами.
+                Если вы&nbsp;любите шутить с&nbsp;незнакомыми людьми, в&nbsp;Додо никто этого не&nbsp;запретит. А&nbsp;если
+                не&nbsp;любите общаться, мы&nbsp;не&nbsp;будем заставлять.
+            </p>
+        </div>
+    </div>
+    <!-- 4 small paragraphs -->
+    <div class="section wide">
+        <div class="marks info-text">
+            <h3>Оценки от сотрудников</h3>
+            <p>
+                Каждый месяц в&nbsp;Додо
+                <span class="highlighted">мы&nbsp;выясняем, насколько сотрудники довольны</span>
+                своей работой и&nbsp;что им&nbsp;не&nbsp;нравится. Для этого у&nbsp;нас есть индекс счастья.
+            </p>
+            <p>
+                Сотрудники заполняют специальную анкету, где ставят оценку работодателю и&nbsp;пишут свои
+                комментарии.
+                Мы&nbsp;собираем все анкеты, обрабатываем и&nbsp;распределяем отзывы по&nbsp;отделам или конкретным
+                пиццериям, чтобы их&nbsp;отработали.
+            </p>
+        </div>
+
+        <div class="control info-text">
+            <h3>Беспристрастное управление</h3>
+            <p>
+                Всеми пиццериями Додо в&nbsp;мире управляет одна система&nbsp;— Додо ИС. Она ведет учет всего,
+                что происходит в&nbsp;пиццерии, в&nbsp;том числе графиков работы. Раз в&nbsp;неделю кассир, менеджер,
+                пиццамейкер заходят в&nbsp;Додо ИС&nbsp;и&nbsp;отмечают, в&nbsp;какие дни будут работать на&nbsp;следующей
+                неделе.
+                Додо ИС&nbsp;говорит: «Записано!»&nbsp;— и&nbsp;никому не&nbsp;дает незаметно поставить сотруднику
+                лишнюю смену.
+            </p>
+            <p>
+                Заодно в&nbsp;Додо ИС
+                <span class="highlighted">сотрудник видит, сколько заработал</span>
+                в&nbsp;этом месяце, и,&nbsp;если мало, назначает себе больше рабочих часов.
+            </p>
+        </div>
+
+        <div class="studting info-text">
+            <h3>Обучение</h3>
+            <p>
+                Чтобы прийти на&nbsp;работу в&nbsp;Додо, вам не&nbsp;нужно специальное образование или опыт работы:
+                <span class="highlighted">мы&nbsp;научим всему</span>
+                , что вам потребуется.
+            </p>
+            <p>
+                Новый сотрудник&nbsp;— это стажер. Он&nbsp;проходит обучение, сдает экзамен и&nbsp;становится
+                кандидатом.
+                В&nbsp;роли кандидата новичок отрабатывает несколько смен и&nbsp;становится полноценным сотрудником.
+            </p>
+        </div>
+
+        <div class="growth info-text">
+            <h3>Рост</h3>
+            <p>
+                У&nbsp;нас есть все возможности для роста: кассиры становятся менеджерами и&nbsp;растут до&nbsp;управляющих.
+            </p>
+            <p>
+                <span class="highlighted">Мы&nbsp;поддерживаем желаение развиваться</span>
+                , поэтому почти все управляющие в&nbsp;пиццерии&nbsp;- те, кто когда-то пришел в&nbsp;Додо стажером.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Page with form and image -->
+<div class="sectionwide">
+    <div class="form-section__content">
+        <div class="form" id="form">
+            <h2>Приглашаем работать на&nbsp;равных!</h2>
+            <p>Мы&nbsp;рады всем, кто хочет приходить на&nbsp;работу с&nbsp;удовольствием и&nbsp;каждый день готовить,
+                продавать и&nbsp;доставлять вкусную пиццу. Присоединяйтесь!</p>
+            <div class="form__wrap">
+                <div class="form__content">
+                    <form action="#" method="post">
+                        <div class="form__content-item form-block-with-label form-block-active">
+                            <div class="form-label">Город</div>
+                            <select id="locations" class="form__content-input required select2-hidden-accessible"
+                                    placeholder="Город" data-select2-id="locations" tabindex="-1" aria-hidden="true">
+                                <option value="" data-select2-id="11"></option>
+
+                            </select>
+                        </div>
+                        <div class="form__content-item form-block-with-label" id="PizzaAddress">
+                            <div class="form-label form-label_disabled">Адрес пиццерии</div>
+                            <select id="PizzaAddressSelect" name="Types"
+                                    class="form__content-input required select2-hidden-accessible"
+                                    placeholder="Адрес пиццерии" disabled="" data-select2-id="vacancies" tabindex="-1"
+                                    aria-hidden="true">
+                            </select>
+                        </div>
+                        <div class="form__content-item form-block-with-label" id="partialVacancies">
+                            <div class="form-label form-label_disabled">Вакансии</div>
+                            <select id="vacancies" name="Types"
+                                    class="form__content-input required select2-hidden-accessible"
+                                    placeholder="Вакансии" disabled="" data-select2-id="vacancies" tabindex="-1"
+                                    aria-hidden="true">
+                            </select>
+                        </div>
+
+                        <div class="form__content-group">
+                            <div>
+                                <div class="form__content-group-item js-form-block">
+                                    <div class="form-label">Имя</div>
+                                    <input id="name" name="FirstName" type="text" placeholder=""
+                                           class="form__content-input required js-input" autocomplete="off">
+                                </div>
+                                <div class="form__content-group-item form__content-group-item_right js-form-block">
+                                    <div class="form-label">Фамилия</div>
+                                    <input id="lastname" name="SecondName" type="text"
+                                           class="form__content-input required js-input" placeholder=""
+                                           autocomplete="off">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="form__content-group-item js-form-block">
+                                    <div class="form-label">Дата рождения</div>
+                                    <input id="birthday" name="Birthday" type="text" data-type="date"
+                                           class="form__content-input required js-input" placeholder=""
+                                           autocomplete="off" im-insert="true">
+                                </div>
+                                <div class="form__content-group-item form__content-group-item_right js-form-block">
+                                    <div class="form-label">Телефон</div>
+                                    <input id="phone" name="PhoneNumber" type="text"
+                                           class="form__content-input required js-input" placeholder="" data-length="18"
+                                           autocomplete="off" im-insert="true">
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="form__content-group-item js-form-block">
+                                    <div class="form-label">Ссылка на соцсеть</div>
+                                    <input id="SocialLink" name="SocialLink" type="text"
+                                           class="form__content-input js-input" placeholder="" autocomplete="off">
+                                </div>
+                                <div class="form__content-group-item form__content-group-item_right js-form-block">
+                                    <span class="note">По желанию. На случай, если не&nbsp;дозвонимся по телефону.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__content-checkbox-group form__content-checkbox-pdn">
+                            <input type="checkbox" class="form__content-checkbox required" id="pdn" name="pdn">
+                            <label for="pdn" class="form__content-checkbox-label">
+                                Согласен&nbsp;на <span class="pdnLink" id="pdnLink">обработку персональных данных</span>
+                            </label>
+                        </div>
+                        <div class="form__content-button">
+                            <div id="send" class="button button_primary button_small">
+                                <div class="btn-text">Отправить анкету</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="conditions">
+            <img src="https://rabotavdodo.ru/Content/images/new/conditions.svg" width="100%" height="100%"
+                 loading="lazy" alt="Условия">
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="footer__content__nav clearfix">
+                    <div class="footer__content__nav-wrap">
+                        <ul class="footer__content__nav-list">
+                            <li class="footer__content__nav-item">
+                                <span class="footer__content__nav-title black-color">Додо Пицца</span>
+                            </li>
+                            <li class="footer__content__nav-item">
+                                <a href="https://dodopizza.ru/moscow/about" class="footer-link link color-opacity"
+                                   rel="noopener" target="_blank">О нас</a>
+                            </li>
+                            <li class="footer__content__nav-item">
+                                <a href="http://book.dodopizza.info/" class="footer-link link color-opacity"
+                                   rel="noopener" target="_blank">Додо-книга</a>
+                            </li>
+                            <li class="footer__content__nav-item">
+                                <a href="http://sila-uma.ru/aboutdodo/" class="footer-link link color-opacity"
+                                   rel="noopener" target="_blank">Блог «Сила ума»</a>
+                            </li>
+                            <li class="footer__content__nav-item">
+                                <a href="http://dodois.com/" class="footer-link link color-opacity" rel="noopener"
+                                   target="_blank">Додо ИС</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content__nav-wrap">
+                        <ul class="footer__content__nav-list">
+                            <li class="footer__content__nav-item">
+                                <span class="footer__content__nav-title black-color">Ищем</span>
+                            </li>
+                            <li class="footer__content__nav-item">
+                                <a href="http://rabotavdodo.ru/" class="footer-link link color-opacity" rel="noopener"
+                                   target="_blank">В пиццерию</a>
+                            </li>
+                            <li class="footer__content__nav-item">
+                                <a href="http://dodocc.ru/" class="footer-link link color-opacity" rel="noopener"
+                                   target="_blank">В контакт-центр</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content__nav-wrap">
+                        <ul class="footer__content__nav-list">
+                            <li class="footer__content__nav-item">
+                                <span class="footer__content__nav-title black-color">Партнёрам</span>
+                            </li>
+                            <li class="footer__content__nav-item">
+                                <a href="http://www.dodofranchise.ru/" class="footer-link link color-opacity"
+                                   rel="noopener" target="_blank">Франшиза</a>
+                            </li>
+                            <li class="footer__content__nav-item">
+                                <a href="http://dodoinvest.com/" class="footer-link link color-opacity" rel="noopener"
+                                   target="_blank">Инвестиции</a>
+                            </li>
+                            <li class="footer__content__nav-item">
+                                <a href="https://www.b2b-center.ru/firms/ooo-dodo-franchaizing/350318/" rel="noopener"
+                                   class="footer-link link color-opacity" target="_blank">Ищем поставщиков</a>
+                            </li>
+                            <li class="footer__content__nav-item">
+                                <a href="http://www.dodoarenda.ru/" class="footer-link link color-opacity"
+                                   rel="noopener" target="_blank">Предложить помещение</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__content__nav-wrap">
+                        <ul class="footer__content__nav-list">
+                            <li class="footer__content__nav-item">
+                                <span class="footer__content__nav-title black-color">Это интересно</span>
+                            </li>
+                            <li class="footer__content__nav-item">
+                                <a href="http://www.bezperchatok.ru/" class="footer-link link color-opacity"
+                                   rel="noopener" target="_blank">Почему мы готовим<br>без перчаток?</a>
+                            </li>
+                            <li class="footer__content__nav-item">
+                                <a href="http://www.dodokids.ru/" class="footer-link link color-opacity" rel="noopener"
+                                   target="_blank">Экскурсии и мастер-классы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__content__app">
+                    <a href="https://play.google.com/store/apps/details?id=ru.dodopizza.app&amp;hl=ru" rel="noopener"
+                       class="footer__content__app-link">
+                        <img src="https://rabotavdodo.ru/Content/images/icons/googleplay.png" loading="lazy"
+                             class="footer__content__app-google" alt="googleplay">
+                    </a>
+                    <a class="footer__app-link"
+                       href="https://itunes.apple.com/ru/app/%D0%B4%D0%BE%D0%B4%D0%BE-%D0%BF%D0%B8%D1%86%D1%86%D0%B0-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0-%D0%BF%D0%B8%D1%86%D1%86%D1%8B-1/id894649641?mt=8"
+                       rel="noopener">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/svg/appstore.svg" loading="lazy"
+                             class="footer__content__app-appstore" alt="appstore">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__social container">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="footer__content__social">
+                    <a href="https://vk.com/dodo" target="_blank" rel="noopener"
+                       class="footer-social__icon footer-social__icon_vkontakte footer-link link color-opacity"></a>
+                    <a href="https://www.youtube.com/dodomovie" rel="noopener" target="_blank"
+                       class="footer-social__icon footer-social__icon_youtube footer-link link color-opacity"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer__bottom">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer__bottom-copyright">
+                        <img src="https://dodopizza-a.akamaihd.net/rabotavdodo/svg/logo-dodo-wordmark-ru.svg"
+                             loading="lazy" alt="logo" class="footer__bottom-copyright__img">
+                        <span class="footer__bottom-copyright__text color">© 2022</span>
+                    </div>
+                    <a href="/Content/useragreement.html" class="footer__bottom-link footer-link link color-opacity"
+                       target="_blank">Пользовательское соглашение</a>
+                    <a href="/Content/policy.html" class="footer__bottom-link footer-link link color-opacity"
+                       target="_blank">Политика обработки персональных данных</a>
+                    <div class="footer__bottom-contacts-feedback">
+                        <a href="mailto:feedback@dodopizza.com" class="footer__bottom-link link color-opacity">feedback@dodopizza.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
